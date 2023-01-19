@@ -9,7 +9,7 @@ local Radius = {}; do
             Radius.TrackingRadius = int
         end)
 
-        Values:AddSlider("Flick Radius", 0, 900, Radius.FlickRadius,, {flag = "flick_slider_2"}, function(int)
+        Values:AddSlider("Flick Radius", 0, 900, Radius.FlickRadius, {flag = "flick_slider_2"}, function(int)
             Radius.FlickRadius = int
         end)
     end
