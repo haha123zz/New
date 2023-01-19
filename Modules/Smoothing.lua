@@ -3,11 +3,11 @@ local Smoothing = {}; do
     Smoothing.FlickPercent = .5 
 
     local Values = SmoothingTab:AddSection("Values"); do
-        Values:AddSlider("Track Percent", .1, 1.2, {flag = "track_slider"}, function(int)
+        Values:AddSlider("Track Percent", .1, 1.2, Smoothing.TrackPercent, {flag = "track_slider"}, function(int)
             print(int)
         end)
 
-        Values:AddSlider("Flick Percent", .1, 1.2, {flag = "flick_slider"}, function(int)
+        Values:AddSlider("Flick Percent", .1, 1.2, Smoothing.FlickPercent, {flag = "flick_slider"}, function(int)
             print(int)
         end)
     end
