@@ -7,8 +7,8 @@ getgenv().ClientCharacter = Client.Character or Client.CharacterAdded:Wait();
 getgenv().Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/haha123zz/New/main/UI/source.lua"))()
 getgenv().Window = Library:AddWindow({
 	title = {
-        "Interal UI",
-        "RC-M"
+        "RC-M",
+        "Internal UI"
     },
     default = true,
     theme = {
@@ -28,3 +28,6 @@ getgenv().RadiusTab = Window:AddTab("Radius")
 Client.CharacterAdded:Connect(function(Character)
 	getgenv().ClientCharacter = Character;
 end)
+
+getgenv().Smoothing = loadstring(game:HttpGet("https://raw.githubusercontent.com/haha123zz/New/main/Modules/Smoothing.lua"))()
+--getgenv().Radius = loadstring(game:HttpGet(""))()
