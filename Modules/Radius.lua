@@ -15,7 +15,7 @@ local Radius = {}; do
     end
 
     local Booleans = RadiusTab:AddSection("Booleans"); do
-        Booleans:AddToggle("Show Circle", Radius.ShowCircle, {flag = "circle_boolean"}, function(val)
+        Booleans:AddToggle("Show Circle", {flag = "circle_boolean"}, function(val)
             Radius.ShowCircle = val
         end)
     end
